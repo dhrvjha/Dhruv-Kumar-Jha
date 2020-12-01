@@ -72,3 +72,5 @@ def send_mails():
         
     # Terminate the SMTP session and close the connection
     s.quit()
+
+send_mails()
