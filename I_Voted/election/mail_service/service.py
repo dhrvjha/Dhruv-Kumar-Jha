@@ -1,7 +1,7 @@
 import smtplib
 import time #sleep
 from string import Template
-from I_Voted.election.url_service.uuid_engine import new_id
+# from I_Voted.election.url_service.uuid_engine import new_id
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -39,7 +39,7 @@ def send_mails():
 
     # set up the SMTP server
     s = smtplib.SMTP(host='smtp.gmail.com', port=587)
-    # s.set_debuglevel(1)
+    s.set_debuglevel(1)
     s.starttls()
     s.login(MY_ADDRESS, PASSWORD)
 
@@ -48,9 +48,10 @@ def send_mails():
         msg = MIMEMultipart()       # create a message
 
         # add in the actual person name to the message template
-        url_id = new_id(email)
-        if url_id == None:
-            continue
+        # url_id = new_id(email)
+        url_id = 'b4952f55-be9f-4a86-acbf-d3b994ccd71e'
+        # if url_id == None:
+        #     continue
         message = message_template.substitute(PERSON_NAME=name.title(), request_id=url_id)
 
         # Prints out the message body for our sake
@@ -59,7 +60,7 @@ def send_mails():
         # setup the parameters of the message
         msg['From']=MY_ADDRESS
         msg['To']=email
-        msg['Subject']="This is TEST"
+        msg['Subject']="Your voting link is now active go vote"
         
         # add in the message body
         msg.attach(MIMEText(message, 'plain'))

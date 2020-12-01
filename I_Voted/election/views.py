@@ -14,7 +14,7 @@ def voteview(request, factory_id):
     name = email_flag.split('_')[0]
     check_continue.add_to_continue_list(request_uuid=_uuid, email=email_flag)
     htmlrespnse = '<a href=\"http://127.0.0.1:8000/vote/'+_uuid +'/continue/\">continue</a>'
-    return HttpResponse(htmlrespnse)
+    return render(request, 'election/home.html')
 
 def votecontinueview(request, factory_id):
     _uuid = returnUUID(request)
@@ -27,4 +27,4 @@ def votecontinueview(request, factory_id):
     return HttpResponse("votecount",email)
 
 def conductvoteview(request):
-    return HttpResponse('you')
+    return render(request, 'election/home.html')
