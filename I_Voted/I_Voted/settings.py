@@ -14,8 +14,7 @@ from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
+ROOT_PATH = os.path.dirname(__file__)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -25,7 +24,7 @@ SECRET_KEY = 'ad2vw8zvgoqbolofs6da2u0s5364m&ctn78s1bh#21!x+#13m#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['https://smitvotes.herokuapp.com/','http://127.0.0.1:8000/']
 
 
 # Application definition
@@ -119,4 +118,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_URL = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = (os.path.join(BASE_DIR, 'staticfiles'))
+
+STATICFILES_DIRS=[(os.path.join(BASE_DIR,'static')),(os.path.join(BASE_DIR,'election/static'))]
+
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+TEMPLATE_DIRS = (
+    os.path.join(SETTINGS_PATH, 'templates'),
+)

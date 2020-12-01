@@ -1,4 +1,3 @@
-
 import smtplib
 import time #sleep
 from string import Template
@@ -34,7 +33,7 @@ def read_template(filename):
         template_file_content = template_file.read()
     return Template(template_file_content)
 
-def main():
+def send_mails():
     names, emails = get_contacts('mycontacts.txt') # read contacts
     message_template = read_template('message.txt')
 
@@ -72,6 +71,3 @@ def main():
         
     # Terminate the SMTP session and close the connection
     s.quit()
-    
-if __name__ == '__main__':
-    main()

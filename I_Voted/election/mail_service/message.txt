@@ -1,7 +1,0 @@
-Dear ${PERSON_NAME}, 
-
-Your link for voting is : www.smitvotes.bk/vote/${request_id}
-
-Go vote today,
-
-Your vote matters.
