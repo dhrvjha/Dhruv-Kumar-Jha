@@ -62,7 +62,8 @@ Technical Description
    voting link will be sent to email provided.
 
 Screenshots:
-![Alt text](/I_Voted/screenshots/mail.jpg?raw=true "Mail from mail-service")
+![Mail from mail-service](/I_Voted/screenshots/mail.jpg?raw=true "Mail from mail-service")
+![Conduct](/I_Voted/screenshots/mail.jpg?raw=true "Conduct")
 
 Team Members
 
