@@ -4,9 +4,8 @@
 Project Overview
 What problem did the team try to solve?
 Security Of Online Voting Platform.
-W
-hat is the proposed solution?
 
+What is the proposed solution?
 Two step verification
 
 Solution Description
