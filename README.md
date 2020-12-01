@@ -63,7 +63,7 @@ Technical Description
 
 Screenshots:
 ![Mail from mail-service](/I_Voted/screenshots/mail.jpg?raw=true "Mail from mail-service")
-![Conduct](/I_Voted/screenshots/mail.jpg?raw=true "Conduct")
+![Conduct](/I_Voted/screenshots/conduct.jpg?raw=true "Conduct")
 
 Team Members
 
