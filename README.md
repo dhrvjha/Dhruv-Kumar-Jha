@@ -61,6 +61,9 @@ Technical Description
    to organise vote visit http://127.0.0.1:8000/conduct/
    voting link will be sent to email provided.
 
+Screenshots:
+![Alt text](/I_Voted/screenshots/mail.jpg?raw=true "Mail from mail-service")
+
 Team Members
 
   |Dhruv Kumar Jha    | dhruv_201800528@smit.smu.edu.in | django, url-service, database|
